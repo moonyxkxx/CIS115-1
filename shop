@@ -1,0 +1,12 @@
+shop=False
+while(shop==False):
+ cart=['what would you like','how many do you want write done when are finished']
+ answers=[]
+ for questions in cart:
+   print(questions)
+   answer=input()
+   if answer.lower() == "done":
+    shop=True
+    break
+   answers.append(answer)
+ print(answers)
